@@ -1,0 +1,17 @@
+g++ -o a a.cpp
+
+g++ -o b b.cpp
+
+g++ -o c c.cpp
+
+time ./a
+
+echo
+echo
+echo
+time ./b
+
+echo
+echo
+echo
+time ./c

@@ -1,0 +1,32 @@
+/***************
+Name: Taylor Condrack
+Course: 3110-001
+Assignment: Program 3
+Due Date: 10/24/15
+****************/
+
+The strategy that seems to give the most balance to the tree would be the
+method used in part b. This is because it consistently alternates between
+the largest value in the left subtree and the smallest in the right one.
+Using the method used in part a multiple times will result in the left 
+subtree becoming much smaller than other subtrees in the tree. Part c will
+use a delete method inconsistenly which could cause the same affect that 
+part a has. 
+
+Although my programs cpu time was negligible, with a larger set to insert
+into my tree part a should be the fastest. Since part a will remove nodes
+from the same subtree everytime, this could result in a section of the 
+tree getting smaller. Therefore, accessing nodes in the shorter subtree
+will take fewer time the smaller that subtree gets. 
+
+
+Running on my personal computer the runtimes I got are the following-
+
+	| Test 1| Test 2| Test 3| Test 4|
+        ---------------------------------
+a.pp-   | .003s | .002s | .003  | .003s |
+	---------------------------------
+b.cpp-	| .003s | .003s | .004s | .006s |
+        ---------------------------------
+c.cpp-	| .004s | .002s | .003s | .004s |
+        ---------------------------------
